@@ -1,0 +1,17 @@
+{
+    "name": "LAMBDA_NAME",
+    "description": "",
+    "region": "eu-west-1",
+    "handler": "main.lambda_handler",
+    "role": "LAMBDA_ROLE",
+    "requirements": ["gmusicapi", "boto3"],
+    "ignore": [
+        "lambda.json",
+        ".git",
+        "/*.pyc",
+        "/*.txt",
+        "/*.zip"
+    ],
+    "timeout": 90,
+    "memory": 128
+}
