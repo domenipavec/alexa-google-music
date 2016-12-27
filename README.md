@@ -48,7 +48,7 @@ Create new table in Dynamodb in aws console
 
 ### Lambda
 
-Create new lambda function
+Create new lambda function. Add permissions for Dynamodb to lambda role.
 
 Modify *lambda.json* and *settings.py* with correct information. Use application password for
 google if you use 2FA.
