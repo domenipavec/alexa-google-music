@@ -131,7 +131,7 @@ def playback_started(event, state):
     return build_response('')
 
 
-def intent_hander(event, state):
+def intent_handler(event, state):
     intent = event['request']['intent']
 
     if intent['name'] == "SayHiIntent":
@@ -173,7 +173,7 @@ def lambda_handler(event, context):
     result = build_response('')
 
     if event['request']['type'] == "IntentRequest":
-        result = intent_hander(event, state)
+        result = intent_handler(event, state)
     elif event['request']['type'] == 'AudioPlayer.PlaybackNearlyFinished':
         result = playback_nearly_finished(event, state)
     elif event['request']['type'] == 'AudioPlayer.PlaybackStarted':
